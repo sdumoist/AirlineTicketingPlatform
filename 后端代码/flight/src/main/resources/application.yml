@@ -1,0 +1,24 @@
+mybatis:
+  #开启驼峰映射
+  configuration:
+    map-underscore-to-camel-case: true
+
+checkString: xszxjcwx
+
+expireTime: 2592000000
+#连接数据库的信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://124.71.160.152:3306/bookflightticket?useSSL=false&serverTimezone=UTC&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 901190Aa
+    type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    static-path-pattern: /img/**
+
+
+logging:
+  level:
+    com.database.flightbook.mapper: DEBUG
+#查看sql语句
